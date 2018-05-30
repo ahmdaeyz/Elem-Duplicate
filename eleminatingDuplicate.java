@@ -47,7 +47,7 @@ public class eleminatingDuplicate{
         return name.toLowerCase().endsWith(".jpg");
     }
     public static String checkSumForFile(File file) throws Exception {
-        MessageDigest messageDigest = MessageDigest.getInstance("SHA1");
+        MessageDigest messageDigest = MessageDigest.getInstance("MD5");
 	    FileInputStream fileInput = new FileInputStream(file);
 	    byte[] dataBytes = new byte[1024];
 	    int bytesRead = 0;
